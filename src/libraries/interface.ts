@@ -1,7 +1,7 @@
 type Guid = string;
 type ContextType = "back" | "front" | "none";
 type DocumentContextType = "document-front" | "document-back";
-type MimeType = "Media/png";
+type MimeType = "image/png";
 type ProbabilityType = number;
 
 export interface SessionType {

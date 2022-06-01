@@ -11,7 +11,7 @@ app.get('/api/sessions/:sessionId', async (req, res) => {
     return res.status(200).json(data);
   } catch (error: any) {
     console.error('Error happened', error);
-    return res.status(error.response.status).json({ message: error.response.data });
+    return res.status(error.response?.status || 500).json({ message: error.response?.data || 'Internal server error' });
   }
 });
 

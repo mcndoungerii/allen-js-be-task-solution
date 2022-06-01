@@ -1,0 +1,14 @@
+{
+  "rootDir": "../",
+  "globals": {
+    "ts-jest": {
+      "tsconfig": "./config/tsconfig.test.json"
+    }
+  },
+  "transform": {
+    "^.+\\.(ts)$": "ts-jest"
+  },
+  "testMatch": [
+    "**/test/**/*.spec.(ts|js)"
+  ]
+}

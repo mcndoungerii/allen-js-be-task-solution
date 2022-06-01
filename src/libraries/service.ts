@@ -16,6 +16,6 @@ export const getSessionService = async (sessionId: string): Promise<MediaInSessi
         const front = media.isFore().beyondProbability(.2).sorter('desc').run()
         const back = media.isRear().beyondProbability(.2).sorter('desc').run()
 
-        return {  session,front, back }
+        return {  front, back, session }
 
 }
